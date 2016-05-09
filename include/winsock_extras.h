@@ -21,18 +21,13 @@
 
 #ifndef __wcecompat__WINSOCK_EXTRAS_H__
 #define __wcecompat__WINSOCK_EXTRAS_H__
-
+#ifndef _WINSOCK2API_
+#include <winsock2.h>
+#endif
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-struct servent {
-    char* s_name;
-    char** s_aliases;
-    short int s_port;
-    char* s_proto;
-} servent;
 
 struct servent* getservbyname(const char* name, const char* proto);
 
