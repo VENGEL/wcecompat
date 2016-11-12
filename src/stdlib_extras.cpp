@@ -47,7 +47,7 @@ void* bsearch(const void* key, const void* base, size_t nmemb, size_t size,
 	return NULL;
 }
 
-unsigned __int64 _strtoui64(const char *nptr, char **endptr, int base)
+/* unsigned __int64 _strtoui64(const char *nptr, char **endptr, int base)
 {
 	unsigned __int64 v=0;
 
@@ -74,5 +74,5 @@ unsigned __int64 _strtoui64(const char *nptr, char **endptr, int base)
 	}
 	if (endptr) *endptr=(char *)nptr;
 	return v;
-}
+} */
 
