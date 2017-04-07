@@ -7,4 +7,5 @@ wceconfig.mak
 lib/*
 obj/*
 tmp/*
+build
 
